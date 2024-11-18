@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "Network-Scanner"
+version = "0.1.0"
+description = "A FastAPI-based application to monitor and log device activity on an office LAN."
+authors = [
+    "Alain-Lewis",
+    "Zekhz <etordzeke@gamil.com>"
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.0"
+uvicorn = "^0.23.0"
+pysnmp = "^5.0.0"
+requests = "^2.31.0"
+geoip2 = "^4.6.0"
+sqlalchemy = "^2.0.20"
+pandas = "^2.1.1"
+matplotlib = "^3.8.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.2"
+black = "^23.9.0"
+isort = "^5.12.0"
+mypy = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.6.1"]
+build-backend = "poetry.core.masonry.api"
